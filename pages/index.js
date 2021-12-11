@@ -2,10 +2,10 @@ import SideBar from "../components/SideBar";
 
 export default function Home() {
     return (
-        <div className="">
+        <div className="bg-black h-screen overflow-hidden">
             <main>
                 <SideBar/>
-                {/*Center*/}
+                {/*Center .... should have overflow scroll*/ }
             </main>
             <div>
                 {/*Player*/}
