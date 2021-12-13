@@ -5,6 +5,7 @@ import {shuffle} from "lodash";
 import {useRecoilState, useRecoilValue} from "recoil";
 import {playlistIdState, playlistState} from "@/atoms/playlistAtom";
 import spotifyApi from "@/lib/spotify";
+import Songs from "@/components/Songs";
 
 const colors = [
     "from-indigo-500",
@@ -75,7 +76,7 @@ function Center(props) {
                 </div>
             </section>
             <div id="songs">
-                SONGS
+                <Songs/>
             </div>
         </div>
     );
