@@ -35,14 +35,9 @@ function Center(props) {
             } catch (error) {
                 console.log('error: ', error)
             }
-
-
         }, [spotifyApi, playlistId]
     )
-
     console.log('playlist: ', playlist)
-
-
     return (
         <div
             className="flex-grow text-white h-screen overflow-y-scroll scrollbar-hide">
@@ -70,7 +65,7 @@ function Center(props) {
                 />
                 <div>
                     <p>PLAYLIST</p>
-                    <h1 className="text-2xl md:text-3xl xl:text-5xl font-bold">
+                      <h1 className="text-2xl md:text-3xl xl:text-5xl font-bold">
                         {playlist?.name}
                     </h1>
                 </div>
