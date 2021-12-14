@@ -31,6 +31,7 @@ function Center(props) {
         async () => {
             try {
                 const data = await spotifyApi.getPlaylist(playlistId)
+                console.log('data.body: ', data.body)
                 setPlaylist(data.body)
             } catch (error) {
                 console.log('error: ', error)
@@ -43,7 +44,7 @@ function Center(props) {
             className="flex-grow text-white h-screen overflow-y-scroll scrollbar-hide">
             <header className="absolute top-5 right-8">
                 <div
-                    className="flex items-center bg-black space-x-3 opacity-90 hover:opacity-80 cursor-pointer rounded-full p-1 pr-2"
+                    className="flex items-center bg-black space-x-3 opacity-90 hover:opacity-80 cursor-pointer rounded-full p-1 pr-2 text-white"
                     // onClick={signOut}
                 >
                     <img
@@ -65,7 +66,7 @@ function Center(props) {
                 />
                 <div>
                     <p>PLAYLIST</p>
-                      <h1 className="text-2xl md:text-3xl xl:text-5xl font-bold">
+                    <h1 className="text-2xl md:text-3xl xl:text-5xl font-bold">
                         {playlist?.name}
                     </h1>
                 </div>

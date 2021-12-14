@@ -25,7 +25,7 @@ const defaultPlaylist = {
 
 export const playlistState = atom({
     key: 'playlistState',
-    default: defaultPlaylist
+    default: null
 })
 
 export const playlistIdState = atom({
