@@ -11,9 +11,8 @@ export default function Home() {
             <main className="flex">
                 <SideBar/>
                 <Center/>
-                {/*Center .... should have overflow scroll*/ }
             </main>
-            <div>
+            <div className="sticky bottom-0">
                 <Player/>
             </div>
         </div>
